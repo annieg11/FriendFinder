@@ -1,2 +1,2 @@
-nodes_modules
-DS_stores
+node_modules
+.DS_stores
