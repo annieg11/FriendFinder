@@ -33,7 +33,7 @@
                 <input type="text" class="form-control" id="photo" placeholder="">
               </div>
                 <h3><strong>Question 1</strong></h3>
-                <h4>Sense of humor, an integral part of your personality. </h4>
+                <h4>Sense of humor is an integral part of your personality. </h4>
                 <select data-placeholder id="q1" class="chosen-select">
                <option value></option>
                <option value="1">1(Strongly Disagree)</option>
@@ -74,7 +74,7 @@
                <option value="5">5(Strongly Agree)</option>
               </select>
                <h3><strong>Question 5</strong></h3>
-                <h4>Sum totality of all the experiences is the key to happiness. </h4>
+                <h4>Sum total of all the experiences is the key to happiness. </h4>
                 <select data-placeholder id="q5" class="chosen-select">
                <option value></option>
                <option value="1">1(Strongly Disagree)</option>
@@ -95,7 +95,7 @@
                <option value="5">5(Strongly Agree)</option>
               </select>
                <h3><strong>Question 7</strong></h3>
-                <h4>To explore your wilder side always,gives meaning to your existence.</h4>
+                <h4>To explore your wilder side always, gives meaning to your existence.</h4>
                 <select data-placeholder id="q7" class="chosen-select">
                <option value></option>
                <option value="1">1(Strongly Disagree)</option>
@@ -105,7 +105,7 @@
                <option value="5">5(Strongly Agree)</option>
               </select>
                <h3><strong>Question 8</strong></h3>
-                <h4>You say no to all the addictive things,especially
+                <h4>You say no to all the addictive things, especially
                 when you are feeling stressed out. </h4>
                 <select data-placeholder id="q8" class="chosen-select">
                <option value></option> 
@@ -117,7 +117,7 @@
               </select>
                <h3><strong>Question 9</strong></h3>
                 <h4>You can set limits or boundaries so that
-                others respect them,even if you don't want to yourself.</h4>
+                others respect them, even if you don't want to yourself.</h4>
                 <select data-placeholder id="q9" class="chosen-select">
                <option value></option> 
                <option value="1">1(Strongly Disagree)</option>
@@ -139,13 +139,71 @@
             </form>
             <br>
             <div class="text-right">
-              <button type="submit" class="btn btn-primary btn-block" id="addBtn"><span class="glyphicon glyphicon-lock"></span>Submit</button>
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn"><span class="glyphicon glyphicon-lock"></span>Submit</button>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
+<footer class="footer">
+<div class ="container">
+<p>
+  <a href ="/api/friends">API Friends List</a>
+   | 
+  <a href ="https://github.com/annieg11/FriendFinder.git">GitHub Repo</a>
+</p>
+</div>
+</footer>
+</div>
+<!-- Below code handles how the data is sent to our server -->
+<script type="text/javascript">
+// In this code below we create the Front-end Javascript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/friends)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the friends.js file.
+    $("#submitBtn").on("click",function(){
+      // We are grabbing the form elements.
+      var newSurvey ={
+        personName: $('#name').val().trim(),
+        personPhoto: $('#photo').val().trim(),
+        answers:[ $('#q1').val().trim(),
+                 $('#q2').val().trim(),
+                 $('#q3').val().trim(),
+                 $('#q4').val().trim(),
+                 $('#q5').val().trim(),
+                 $('#q6').val().trim(),
+                 $('#q7').val().trim(),
+                 $('#q8').val().trim(),
+                  $('#q9').val().trim(),
+                 $('#q10').val().trim()
+                 ]
+      };
+      // console.log(newSurvey);
+
+      
+
+    // Here we get the location of the root page.
+        // We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
+        var currentURL = window.location.origin;
+        // this code adds the friends and sends to the server.
+        $.post(currentURL+ "/api/friends", newSurvey,function(data){
+            console.log(data);
+
+        });
+
+    return false;
+
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
 
  

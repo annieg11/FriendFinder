@@ -3,27 +3,69 @@ var friendsArray = [
   {
     FriendName: 'Robert De Niro',
     FriendPhotolink: '',
-    Answers: '1,1,1,1,1,1,,1,1,1,1'
-
+    answers: [
+    '1',
+    '1',
+    '1',
+    '1',
+    '1',
+    '1',
+    '1',
+    '1',
+    '1',
+    '1'
+    ]
   },
 
 {
     FriendName: 'Amby',
     FriendPhotolink: '',
-    Answers: '2,2,2,2,2,2,2,2,2,2'
+    answers: [
+    '2',
+    '2',
+    '2',
+    '2',
+    '2',
+    '2',
+    '2',
+    '2',
+    '2',
+    '2'
+    ]
 
   },
 {
     FriendName: 'Mr Spock',
     FriendPhotolink: '',
-    Answers: '3,3,3,3,3,3,3,3,3,3,'
+    answers: [
+    '3',
+    '3',
+    '3',
+    '3',
+    '3',
+    '3',
+    '3',
+    '3',
+    '3',
+    '3'
+    ]
 
   },
 {
     FriendName: 'George Clooney',
     FriendPhotolink: '',
-    Answers: '4,4,4,4,4,4,4,4,4,4'
-
+    answers: [
+    '4',
+    '4',
+    '4',
+    '4',
+    '4',
+    '4',
+    '4',
+    '4',
+    '4',
+    '4'
+    ]
   }
 
 ];
