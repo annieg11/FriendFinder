@@ -2,38 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Survey Questions!!</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+  
 </head>
-<body>
+<body style="background-color:lightblue;">
   <div class="container">
-    <div class="jumbotron">
-      <h1 id="heading1">Survey Questions!!</h1>
+    <div class="jumbotron" style="background-image:url('http://wallpoop.com/wp-content/uploads/2013/03/the-pages-of-avalon-special-thoughts-on-friendship.jpg');" >
+      <h1 id="heading1" style="color:black;">Survey Questions!!</h1>
       <hr>
-      <h3 id="heading2>">You are You,Which is Truer than True!</h3>
+      <h3 id="heading2" style="color:black;">You are You,Which is Truer than True!</h3>
+      <a href ="./home">
+<button id ="button" type ="Submit" class ="btn btn-sm btn-primary"><span class="glyphicon glyphicon-home"></span> Go To Home Page</button></a>
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 id ="about" class="panel-title"><strong><h2>About You</h2></strong></h3>
+        <div class="panel panel-default" style="background-image:url('http://nvim.org/wp-content/uploads/2015/11/ISS_6429_04871.jpg');">
+          <div class="panel-heading" style="background-color:teal;">
+            <h3 id ="about" class="panel-title"><strong><h2 style="color:black;">About You</h2></strong></h3>
           </div>
           <div class="panel-body">
             <form action="" method="POST" role="form">
               <div class="form-group">
-                <label for=""><h3>Name(Required)</h3></label>
+              <!-- Name and Photo image input. -->
+                <label for=""><h3 style="color:black;">Name(Required)</h3></label>
                 <input type="text" class="form-control" id="name" placeholder="">
               </div>
               <div class="form-group">
-                <label for=""><h3>Link to Photo Image(Required)</h3></label>
+                <label for=""><h3 style="color:black;">Link to Photo Image(Required)</h3></label>
                 <input type="text" class="form-control" id="photo" placeholder="">
               </div>
-                <h3><strong>Question 1</strong></h3>
-                <h4>Sense of humor is an integral part of your personality. </h4>
+              <!-- Questions -->
+                <h3 style="color:black;"><strong>Question 1</strong></h3>
+                <h4 style="color:black;">Sense of humor is an integral part of your personality. </h4>
                 <select data-placeholder id="q1" class="chosen-select">
                <option value></option>
                <option value="1">1(Strongly Disagree)</option>
@@ -42,8 +48,8 @@
                <option value="4">4</option>
                <option value="5">5(Strongly Agree)</option>
               </select>
-               <h3><strong>Question 2</strong></h3>
-                <h4>One should travel and explore  new places only in dreams.</h4>
+               <h3 style="color:black;"><strong>Question 2</strong></h3>
+                <h4 style="color:black;">One should travel and explore  new places only in dreams.</h4>
                 <select data-placeholder id="q2" class="chosen-select">
                <option value></option>
                <option value="1">1(Strongly Disagree)</option>
@@ -52,8 +58,8 @@
                <option value="4">4</option>
                <option value="5">5(Strongly Agree)</option>
               </select>
-               <h3><strong>Question 3</strong></h3>
-                <h4> Dancing is like eating a dessert. 
+               <h3 style="color:black;"><strong>Question 3</strong></h3>
+                <h4 style="color:black;"> Dancing is like eating a dessert. 
                  </h4>
                 <select data-placeholder id="q3" class="chosen-select">
                <option value></option>
@@ -63,8 +69,8 @@
                <option value="4">4</option>
                <option value="5">5(Strongly Agree)</option>
               </select>
-               <h3><strong>Question 4</strong></h3>
-                <h4>Watching media with my buddies while eating pizza is one of my favorite pass times.</h4>
+               <h3 style="color:black;"><strong>Question 4</strong></h3>
+                <h4 style="color:black;">Watching media with my buddies while eating pizza is one of my favorite pass times.</h4>
                 <select data-placeholder id="q4" class="chosen-select">
                <option value></option>
                <option value="1">1(Strongly Disagree)</option>
@@ -73,8 +79,8 @@
                <option value="4">4</option>
                <option value="5">5(Strongly Agree)</option>
               </select>
-               <h3><strong>Question 5</strong></h3>
-                <h4>Sum total of all the experiences is the key to happiness. </h4>
+               <h3 style="color:black;"><strong>Question 5</strong></h3>
+                <h4 style="color:black;">Sum total of all the experiences is the key to happiness. </h4>
                 <select data-placeholder id="q5" class="chosen-select">
                <option value></option>
                <option value="1">1(Strongly Disagree)</option>
@@ -83,8 +89,8 @@
                <option value="4">4</option>
                <option value="5">5(Strongly Agree)</option>
               </select>
-               <h3><strong>Question 6</strong></h3>
-                <h4>You usually see yourself as the person you
+               <h3 style="color:black;"><strong>Question 6</strong></h3>
+                <h4 style="color:black;">You usually see yourself as the person you
                 want to be.</h4>
                 <select data-placeholder id="q6" class="chosen-select">
                <option value></option> ==$0
@@ -94,8 +100,8 @@
                <option value="4">4</option>
                <option value="5">5(Strongly Agree)</option>
               </select>
-               <h3><strong>Question 7</strong></h3>
-                <h4>To explore your wilder side always, gives meaning to your existence.</h4>
+               <h3 style="color:black;"><strong>Question 7</strong></h3>
+                <h4 style="color:black;">To explore your wilder side always, gives meaning to your existence.</h4>
                 <select data-placeholder id="q7" class="chosen-select">
                <option value></option>
                <option value="1">1(Strongly Disagree)</option>
@@ -104,8 +110,8 @@
                <option value="4">4</option>
                <option value="5">5(Strongly Agree)</option>
               </select>
-               <h3><strong>Question 8</strong></h3>
-                <h4>You say no to all the addictive things, especially
+               <h3 style="color:black;"><strong>Question 8</strong></h3>
+                <h4 style="color:black;">You say no to all the addictive things, especially
                 when you are feeling stressed out. </h4>
                 <select data-placeholder id="q8" class="chosen-select">
                <option value></option> 
@@ -115,8 +121,8 @@
                <option value="4">4</option>
                <option value="5">5(Strongly Agree)</option>
               </select>
-               <h3><strong>Question 9</strong></h3>
-                <h4>You can set limits or boundaries so that
+               <h3 style="color:black;"><strong>Question 9</strong></h3>
+                <h4 style="color:black;">You can set limits or boundaries so that
                 others respect them, even if you don't want to yourself.</h4>
                 <select data-placeholder id="q9" class="chosen-select">
                <option value></option> 
@@ -126,8 +132,8 @@
                <option value="4">4</option>
                <option value="5">5(Strongly Agree)</option>
               </select>
-               <h3><strong>Question 10</strong></h3>
-                <h4> You are game for the outer beauty than the inner?</h4>
+               <h3 style="color:black;"><strong>Question 10</strong></h3>
+                <h4 style="color:black;"> You are game for the outer beauty than the inner?</h4>
                 <select data-placeholder id="q10" class="chosen-select">
                <option value></option>
                <option value="1">1(Strongly Disagree)</option>
@@ -149,12 +155,33 @@
 <footer class="footer">
 <div class ="container">
 <p>
-  <a href ="/api/friends">API Friends List</a>
+  <a style="color:black;" href ="/api/friends">API Friends List</a>
    | 
-  <a href ="https://github.com/annieg11/FriendFinder.git">GitHub Repo</a>
+  <a style="color:black;" href ="https://github.com/annieg11/FriendFinder.git">GitHub Repo</a>
 </p>
 </div>
 </footer>
+</div>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-md">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2class="modal-title" id ="modalFriend">Journey to a new Friendship!!</h2>
+      </div>
+      <div class="modal-body">
+        <h3 id ="modalName"></h3>
+        <img id ="modalImg" src ="" max-width:"250px";>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>
 <!-- Below code handles how the data is sent to our server -->
 <script type="text/javascript">
@@ -164,32 +191,32 @@
     // In this case the associated code "saves" the data to the friends.js file.
     $("#submitBtn").on("click",function(){
       // We are grabbing the form elements.
-      var newSurvey ={
-        personName: $('#name').val().trim(),
-        personPhoto: $('#photo').val().trim(),
-        answers:[ $('#q1').val().trim(),
-                 $('#q2').val().trim(),
-                 $('#q3').val().trim(),
-                 $('#q4').val().trim(),
-                 $('#q5').val().trim(),
-                 $('#q6').val().trim(),
-                 $('#q7').val().trim(),
-                 $('#q8').val().trim(),
-                  $('#q9').val().trim(),
-                 $('#q10').val().trim()
+      var newFriendsData ={
+        name: $('#name').val().trim(),
+        photo: $('#photo').val().trim(),
+        answers:[ parseInt($('#q1').val()),
+                 parseInt($('#q2').val()),
+                 parseInt($('#q3').val()),
+                 parseInt($('#q4').val()),
+                 parseInt($('#q5').val()),
+                 parseInt($('#q6').val()),
+                 parseInt($('#q7').val()),
+                 parseInt($('#q8').val()),
+                 parseInt( $('#q9').val()),
+                 parseInt($('#q10').val())
                  ]
       };
-      // console.log(newSurvey);
-
-      
+      // console.log(newFriendsData);
 
     // Here we get the location of the root page.
         // We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
         var currentURL = window.location.origin;
         // this code adds the friends and sends to the server.
-        $.post(currentURL+ "/api/friends", newSurvey,function(data){
+        $.post(currentURL+ "/api/friends", newFriendsData,function(data){
             console.log(data);
-
+            $("#modalName").text(data.name);
+            $("#modalImg").attr("src",data.photo);
+            $("#myModal").modal('toggle');
         });
 
     return false;

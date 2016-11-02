@@ -9,6 +9,7 @@ var path = require('path');
   // Below code handles when users "visit" a page.
   // In each of the below cases the user is shown an HTML page of content
   // when user visits the home page.
+
   app.get('/',function (req, res) {
     console.log('Welcome to Home Page!');
     res.sendFile(path.join(__dirname + '/../public/home.html'));
@@ -20,6 +21,7 @@ var path = require('path');
   });
 
   // If no matching route is found default to home
+
   app.use(function (req, res) {
     res.sendFile(path.join(__dirname + '/../public/home.html'));
     // console.log("test");
